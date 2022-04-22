@@ -6,14 +6,17 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint .",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "algoliasearch": "3.35.1",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-instantsearch-dom": "6.0.0",
-    "react-scripts": "1.1.5"
+    "react-scripts": "1.1.5",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "eslint": "4.19.1",
@@ -26,5 +29,6 @@
     "prop-types": "15.7.2"
   },
   "keywords": [],
-  "description": ""
+  "description": "",
+  "snyk": true
 }
